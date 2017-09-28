@@ -1,0 +1,165 @@
+.slide-tree, .slide-tree li,  .slide-tree ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.slide-tree{  font-size: 17px;  margin: 10px 0 10px 0;  }
+.slide-tree ul{  margin-left: 22px;  position: relative;  }
+.slide-tree ul.tree-all{  margin-left: 0px;margin-top: 5px }
+.slide-tree li{  position: relative;  cursor: pointer;  }
+.slide-tree .slideItem{  padding: 4px  10px;  position: relative;  }
+.slide-tree .slideEditBtn{float: right;cursor: pointer;font-size: 16px}
+.slideName{
+    /*display: block;*/
+    display: inline-block;
+    margin-right: 0;
+    position: relative;
+    cursor: pointer;
+}
+.slide-tree .currentTree .treeModelName{
+    display: inline-block;padding: 0 2px;
+}
+.slide-tree .currentTree .treeModelName{
+    background: #6cb1ea;
+    color: #fff;
+}
+/*有编辑按钮*/
+.slide-tree-edit .slideName{  padding-right: 120px;  }
+.slide-tree-edit .slide-tree-editBox{
+    display: inline-block;
+    float: right;
+    width: 120px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+}
+.slide-tree-edit .slide-tree-editBox a.slide-tree-btn:last-child{  margin-left: 10px;  }
+.slide-tree-edit .slide-tree-editBox a.slide-tree-checkbox{  position: relative;  top: -2px;  }
+/*竖线*/
+/*.slide-tree ul li:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    border-left: solid 1px #666;
+    left: -5px;
+    top: -6px;
+}*/
+/*最后一条LI的竖线固定高度*/
+/*.slide-tree li ul:last-child >li:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 22px;
+    border-left: solid 1px #666;
+    left: -5px;
+    top: -6px;;
+}*/
+/*横线*/
+/*.slide-tree ul li:after{
+    content: '';
+    width: 13px;
+    height: 1px;
+    border-top: solid 1px #666;
+    position: absolute;
+    top: 15px;
+    left: -5px;
+}*/
+.noFolder,
+.icon-folder,
+.icon-open,
+.icon-file{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    position: relative;
+    background-image:url("tree_icon.png");
+}
+.slideModel .iconfont{font-size: 17px;}
+/*没有子文件也要有个格子占下位置好对齐*/
+/*.noFolder{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}*/
+/*  有儿子没展开*/
+.icon-folder{
+    background-position: 0 0;
+}
+/*.icon-folder:before{
+    content: '';
+    width: 13px;
+    height: 1px;
+    background: #666;
+    left: 2px;
+    top: 8px;
+    position: absolute;
+}
+.icon-folder:after{
+    content: '';
+    width: 1px;
+    height: 13px;
+    background: #666;
+    left: 8px;
+    top: 2px;
+    position: absolute;
+}*/
+/*有儿子并展开*/
+.icon-open{
+    background-position: 0px 0px;
+}
+/*.icon-open:after{
+    content: '';
+    width: 13px;
+    height: 1px;
+    background: #000;
+    left: 2px;
+    top: 8px;
+    position: absolute;
+}*/
+/*没有儿子*/
+.icon-file{
+    background-position: -18px 0px;
+    /*background-size: 68px 51px;*/
+}
+.icon-all{
+    background-position: -54px -36px;
+}
+/*
+.icon-file:before{
+    content: '';
+    right: 0;
+    top: 0;
+    width: 7px;
+    height: 4px;
+    background: #666;
+    left: auto;
+    position: absolute;
+}
+*/
+
+.tree-act{
+    color: #3c98e6;
+}
+.tree-act .icon-file{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border: solid 1px #3c98e6;
+    position: relative;
+    border-radius: 1px;
+}
+.tree-act .icon-file:before{
+    content: '';
+    right: 0;
+    top: 0;
+    width: 7px;
+    height: 4px;
+    background: #3c98e6;
+    left: auto;
+    position: absolute;
+}
